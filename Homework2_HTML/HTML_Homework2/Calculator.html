@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Calculator</title>
+
+</head>
+<body bgcolor="#696969">
+    <form name="calculator">
+        <!-- form of display -->
+        <table border="5" cellpadding="1" bordercolor="#000000" bgcolor="#2F4F4F" cellspacing="2" width="250">
+            <tr>
+                <td>
+                    <input type="text" align="center" size="23" value="" name="ans" style="background:beige;color:black;">
+                </td>
+            </tr>
+        </table>
+        <!-- form of the buttons -->
+        <table border="5" cellpadding="1" bordercolor="#000000" cellspacing="2" width="250" bgcolor="#6495ED">
+            <tr>
+                <td align="center">
+                    <input type="button" value="  1  " name="one" onclick="document.calculator.ans.value+='1'">
+                </td>
+                <td align="center">
+                    <input type="button" value="  2  " name="two" onclick="document.calculator.ans.value+='2'">
+                </td>
+                <td align="center">
+                    <input type="button" value="  3  " name="three" onclick="document.calculator.ans.value+='3'">
+                </td>
+                <td align="center">
+                    <input type="button" value="  +  " name="add" onclick="document.calculator.ans.value+='+'">
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="button" value="  4  " name="four" onclick="document.calculator.ans.value+='4'">
+                </td>
+                <td align="center">
+                    <input type="button" value="  5  " name="five" onclick="document.calculator.ans.value+='5'">
+                </td>
+                <td align="center">
+                    <input type="button" value="  6  " name="six" onclick="document.calculator.ans.value+='6'">
+                </td>
+                <td align="center">
+                    <input type="button" value="  -  " name="sobtract" onclick="document.calculator.ans.value+='-'">
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="button" value="  7  " name="seven" onclick="document.calculator.ans.value+='7'">
+                </td>
+                <td align="center">
+                    <input type="button" value="  8  " name="eight" onclick="document.calculator.ans.value+='8'">
+                </td>
+                <td align="center">
+                    <input type="button" value="  9  " name="nine" onclick="document.calculator.ans.value+='9'">
+                </td>
+                <td align="center">
+                    <input type="button" value="  *  " name="multyply" onclick="document.calculator.ans.value+='*'">
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="button" value="  C  " name="clear" onclick="document.calculator.ans.value=''">
+                </td>
+                <td align="center">
+                    <input type="button" value="  0  " name="zero" onclick="document.calculator.ans.value+='0'">
+                </td>
+                <td align="center">
+                    <input type="button" value="  =  " name="equal"
+                           onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+                </td>
+                <td align="center">
+                    <input type="button" value="  /  " name="divide" onclick="document.calculator.ans.value+='/'">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

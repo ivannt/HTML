@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Info Form</title>
+    <style type="text/css" media="screen">
+        table {
+            border: 1px solid #ccc;
+        }
+
+        tr {
+            border: 1px solid #ccc;
+        }
+
+        tfoot {
+            background-color: #b2e1ff;
+            text-align: center;
+        }
+
+        textarea {
+            height: 80px;
+            width: 90%;
+        }
+
+        input[type="text"] {
+            width: 90%;
+        }
+
+        input[name="postalCode"], input[name="day"], input[name="month"], input[name="year"],
+        input[name="countryCode"], input[name="areaCode"], input[name="number"], input[name="state"] {
+            width: 50px;
+        }
+
+        input[name="city"] {
+            width: 185px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <table border="1">
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit" />
+                        <input type="reset" value="Clear This Form" />
+                    </td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td><label for="lastName">Last Name</label></td>
+                    <td>
+                        <input type="text" name="lastName" value="" id="lastName" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="firstName">First Name</label></td>
+                    <td>
+                        <input type="text" name="firstName" value="" id="firstName" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td>						<textarea id="address"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City</label></td>
+                    <td>
+                        <input type="text" name="city" value="" id="city" />
+                        <label for="state">State</label>
+                        <input type="text" name="state" value="" id="state" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="postalCode">Zip/Postal code</label></td>
+                    <td>
+                        <input type="text" name="postalCode" value="" id="postalCode" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td>
+                        <!-- a few countryes, just for example-->
+                        <select name="Country" id="country">
+                            <option value="" selected="selected">Select Country</option>                                                      
+                            <option value="Bulgaria">Bulgaria</option>                            
+                            <option value="China">China</option>                            
+                            <option value="France">France</option>                                                      
+                            <option value="Germany">Germany</option>                            
+                            <option value="Hungary">Hungary</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Jamaica">Jamaica</option>                           
+                            <option value="Korea, Republic of">Korea, Republic of</option>                           
+                            <option value="Luxembourg">Luxembourg</option>                           
+                            <option value="Malaysia">Malaysia</option>                            
+                            <option value="New Zealand">New Zealand</option>                            
+                            <option value="Poland">Poland</option>                            
+                            <option value="Romania">Romania</option>                           
+                            <option value="Spain">Spain</option>                            
+                            <option value="Turkey">Turkey</option>                            
+                            <option value="United States">United States</option> 
+                            <option value="United Kingdom">United Kingdom</option>                          
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">
+                            Phone(country code,
+                            <br />
+                            area code, number)
+                        </label>
+                    </td>
+                    <td>
+                        (+
+                        <input type="text" name="countryCode" value="359" id="phone" />
+                        )
+                        <input type="text" name="areaCode" value="" />
+                        -
+                        <input type="text" name="number" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td>
+                        <input type="email" name="email" value="" id="email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Birth date</td>
+                    <td>
+                        <label for="month">Month</label>
+                        <input type="text" name="month" value="" id="month" maxlength="2" />
+                        <label for="day">Day</label>
+                        <input type="text" name="day" value="" id="day" maxlength="2" />
+                        <label for="year">Year</label>
+                        <input type="text" name="year" value="" id="year" maxlength="4" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <select name="gender" id="gender">
+                            <option value=""></option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Starting date</td>
+                    <td>
+                        <input type="radio" name="startingDate" id="spring" />
+                        <label for="spring">Spring 2014</label>
+                        <input type="radio" name="startingDate" id="summer" />
+                        <label for="summer">Summer 2014</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="commentOrQuestion">Comment/Question</label></td>
+                    <td>						<textarea id="commentOrQuestion"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
